@@ -1,0 +1,13 @@
+.tile {
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.tile img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto auto 1em;
+}
