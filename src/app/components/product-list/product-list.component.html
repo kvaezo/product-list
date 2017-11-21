@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let product of products">
+            <a class="tile" href="/details/{{product.id}}">
+                <img src="{{product.image}}" alt="">
+                {{product.name}}<br>
+                {{product.description}}
+            </a>
+        </div>
+    </div>
+</div>
