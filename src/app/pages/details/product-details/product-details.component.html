@@ -1,10 +1,49 @@
 <div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <button class="btn btn-default" (click)="goBack()">Back to the List</button>
+        </div>
+    </nav>
     <div class="row">
         <div class="col-md-12">
-            <a href="/list"><< Back to the List</a>
-        </div>
-        <div class="col-md-12">
-            asd
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ID</td>
+                        <td>{{product.id}}</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>{{product.name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>{{product.price}}</td>
+                    </tr>
+                    <tr>
+                        <td>Rating</td>
+                        <td>{{product.rating}}</td>
+                    </tr>
+                    <tr>
+                        <td>New?</td>
+                        <td>{{product.isNew ? "Yes" : "No"}}</td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td><img src="{{product.image}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td>{{product.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
