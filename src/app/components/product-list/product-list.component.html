@@ -1,11 +1,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4" *ngFor="let product of products">
+<<<<<<< HEAD
             <a class="tile" href="/details/{{product.id}}">
                 <img src="{{product.image}}" alt="">
                 {{product.name}}<br>
                 {{product.description}}
             </a>
+=======
+            <div class="tile">
+                <img src="{{product.image}}" alt="">
+                {{product.name}}
+                {{product.decription}}
+            </div>
+>>>>>>> 6bc82687b7ef45c74a29acdc08ff3cb78a92c47a
         </div>
     </div>
 </div>
