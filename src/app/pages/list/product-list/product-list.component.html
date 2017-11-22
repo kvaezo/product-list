@@ -1,5 +1,10 @@
 <div class="container">
     <div class="row">
+        <div class="col-md-12">
+            <app-product-search></app-product-search>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-4" *ngFor="let product of products">
             <a class="tile" href="/details/{{product.id}}">
                 <img src="{{product.image}}" alt="">
