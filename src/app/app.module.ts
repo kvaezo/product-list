@@ -7,17 +7,13 @@ import { ProductsService } from "./api/products/products.service";
 
 
 import { AppComponent } from "./app.component";
-import { ProductListComponent } from "./components/product-list/product-list.component";
-import { ProductDetailsComponent } from "./components/product-details/product-details.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ProductService } from "./services/product/product.service";
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductListComponent,
-    ProductDetailsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +24,6 @@ import { ProductService } from "./services/product/product.service";
     AppRoutingModule
   ],
   providers: [ ProductService ],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
